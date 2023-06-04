@@ -1,0 +1,122 @@
+<%-include ("partials/header.ejs") %>
+
+
+<section id="top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" head col-lg-6 col-md-12 col-sm-12">
+        <h1 id="tophead">Find your favorite books and have fun with reading!
+        </h1> <br>
+        <button class="btn btn-lg btn-top "> Explore More &nbsp; ></button> <br> <br>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <img id="imagetop" src="/Images/books.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Second Section -->
+<section id="product_category">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 id="products_cat">Explore Categories 🍀</h1>
+      <div class=" cards col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in">
+        <div class="card border border-3">
+          <div class="card-header home_card_header">Horror</div>
+          <div class="card-body">
+            <img src="Images/1.png" class="card-img vg">
+            <h3 class="card-text">Enjoy the rush of adrenaline you experience when you're scared.</h3>
+            <button class="cardbtn btn btn-success" onclick="location.href='./Horror'">Show All</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards col-lg-4 col-md-12 col-sm-12">
+        <div class="card border border-3">
+          <div class="card-header home_card_header">Fiction</div>
+          <div class="card-body">
+            <img src="Images/2.png" class="card-img fr">
+            <h3 class="card-text">Develop empathy, theory of mind, and critical thinking.</h3>
+            <button class="cardbtn btn btn-success" onclick="location.href='./Fiction'">Show All</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards col-lg-4 col-md-12 col-sm-12">
+        <div class="card border border-3">
+          <div class="card-header home_card_header">Poetry</div>
+          <div class="card-body">
+            <img src="Images/3.png" class="card-img di">
+            <h3 class="card-text"> Understand and appreciate the world around us.</h3>
+            <button class="cardbtn btn btn-success" onclick="location.href='./Poetry'">Show All</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards col-lg-4 col-md-12 col-sm-12">
+        <div class="card border border-3">
+          <div class="card-header home_card_header">Fantasy</div>
+          <div class="card-body">
+            <img src="Images/4.png" class="card-img me">
+            <h3 class="card-text"> Enter a world of "contrasts and opposites", to break away from the entrapment of realism.</h3>
+            <button class="cardbtn btn btn-success">Show All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="features">
+  <div class="row">
+    <h1 id="features_head">Why to choose The Reader's Ride?</h1>
+    <div id="features_section" class="col-lg-3 col-md-6">
+      <i id="icons" class="fa fas fa-shipping-fast fa-3x"></i>
+      <h3 class="headfont_features">Fastest Delivery</h3>
+      <p class="features_desc">Get your order within as early as possible</p>
+    </div>
+
+    <div id="features_section" class="col-lg-3 col-md-6">
+      <i id="icons" class="fa-solid fa-store fa-3x"></i>
+      <h3 class="headfont_features">5K+ happy customers</h3>
+      <p class="features_desc">Customers love our site</p>
+    </div>
+
+    <div id="features_section" class="col-lg-3 col-md-6">
+      <i id="icons" class="fa-solid fa-3x fa-indian-rupee-sign"></i>
+      <h3 class="headfont_features">Lowest Price</h3>
+      <p class="features_desc">Get all books at very low price</p>
+    </div>
+  </div>
+
+
+</section>
+
+<section id="newsletter">
+  <div class="calc">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 id="calc_text" class="mx-5"> Subscribe to our newsletter! 📩</h1>
+        <div class="col-lg-12 calc">
+          <div class="calculator">
+            <div class="inputfrm">
+              <label for="exampleFormControlInput1" class="form-label w-100 lab">Enter your email to get weekly updates :)</label> <br>
+              <input type="email" class="form-control" id="mailid" aria-describedby="emailHelp" placeholder="Enter email">
+              <button type="submit" onclick=subscribe()  class="btn btn-lg calc_btn ">Subscribe</button>
+              <p id="mail_res" style="margin-top: 40px;"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<script>
+
+  function subscribe(){
+    const mail = document.getElementById("mailid").value;
+    if(mail != "" && mail.type === email){
+      document.getElementById("mail_res").innerHTML = "Thank you for subscribing!";
+    }
+    else{
+      alert(123)
+    }
+  }
+</script>
+<%-include ("partials/footer.ejs") %>

@@ -1,0 +1,59 @@
+<%-include ("partials/header_1.ejs") %>
+<div class="maindiv">
+  <h2 style="text-align: center"> Welcome back user 👋</h2>
+  <!-- Second Section -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <h1 id="products_cat">Order Anything here!</h1>
+        <div class=" cards col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in">
+          <div class="card border border-3">
+            <div class="card-header home_card_header">Horror</div>
+            <div class="card-body">
+              <img src="Images/1.png" class="card-img vg">
+              <h3 class="card-text">Enjoy the rush of adrenaline you experience when you're scared.</h3>
+              <button class="cardbtn btn btn-success" onclick="location.href='/vegetables1'">Show All</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards col-lg-4 col-md-12 col-sm-12">
+          <div class="card border border-3">
+            <div class="card-header home_card_header">Fiction</div>
+            <div class="card-body">
+              <img src="Images/2.png" class="card-img fr">
+              <h3 class="card-text">Develop empathy, theory of mind, and critical thinking.</h3>
+              <button class="cardbtn btn btn-success" onclick="location.href='/fruits1'">Show All</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards col-lg-4 col-md-12 col-sm-12">
+          <div class="card border border-3">
+            <div class="card-header home_card_header">Poetry</div>
+            <div class="card-body">
+              <img src="Images/3.png" class="card-img di">
+              <h3 class="card-text">Understand and appreciate the world around us.</h3>
+              <button class="cardbtn btn btn-success" onclick="location.href='/diary1'">Show All</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards col-lg-4 col-md-12 col-sm-12">
+          <div class="card border border-3">
+            <div class="card-header home_card_header">Fantasy</div>
+            <div class="card-body">
+              <img src="Images/4.png" class="card-img me">
+              <h3 class="card-text"> Enter a world of "contrasts and opposites", to break away from the entrapment of realism.</h3>
+              <button onclick="location.href='/meat1'" class="cardbtn btn btn-success">Show All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  function successmsg() {
+    alert("Success");
+  }
+</script>
+<%-include ("partials/footer.ejs") %>
